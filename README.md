@@ -5,6 +5,9 @@ In this study, we proposed a machine learning framework EXPERT-Disease which int
 
 To get the the disease model of each city, please download [DNN model for each city](https://github.com/HUST-NingKang-Lab/EXPERT-Disease-GGMP/releases/tag/models).
 
+## Get and use
+To learn how to install the model and how to use it, click [here]()
+
 <img src="https://github.com/HUST-NingKang-Lab/EXPERT-Disease-GGMP/blob/main/transfer%20learning.png" style="zoom:150%;" />
 
 ## Support
