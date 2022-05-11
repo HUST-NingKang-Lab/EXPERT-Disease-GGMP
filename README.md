@@ -1,7 +1,7 @@
 # EXPERT-Disease-GGMP
 Recently, machine learning based on microbial features has drawn increasing interests in diagnosis of diverse diseases such as IBD, Type-2 Diabate, etc. However,  current methods were unable to mitigate the regional effects, which made it difficult to perform microbial-based cross-regional diagnosis of diseases.
 
-In this study, we proposed a machine learning framework which integrated the neural network and transfer learning for microbial-based cross-regional diagnosis of diseases.
+In this study, we proposed a machine learning framework EXPERT-Disease which integrated the neural network and transfer learning for microbial-based cross-regional diagnosis of diseases.We selected Guangdong Gut Microbiome Project (GGMP, EBI ID: [PRJEB18535](https://www.ebi.ac.uk/ena/browser/view/PRJEB18535?show=reads)) samples and categorized them into 14 cities according to the sample sources. EXPERT-Disease trains from scratch to build a disease neural network model (DNN) based on the training set of each city, and then uesd training set from other cities for transfer learning to obtain the transferred neural network model (TDNN). Finally, the TDNN can be used for disease diagnosis in other cities.
 
 <img src="https://github.com/HUST-NingKang-Lab/EXPERT-Disease-GGMP/blob/main/supplymentary_figure_S1.png" style="zoom:150%;" />
 
