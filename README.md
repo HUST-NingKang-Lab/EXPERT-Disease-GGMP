@@ -1,6 +1,7 @@
 # EXPERT-Disease-GGMP
-Application of transfer learning to exceed the regional limitations and exploit the potential of microbial-based cross-regional diagnosis of diseases. 
+Recently, machine learning based on microbial features has drawn increasing interests in diagnosis of diverse diseases such as IBD, Type-2 Diabate, etc. However,  current methods were unable to mitigate the regional effects, which made it difficult to perform microbial-based cross-regional diagnosis of diseases.
 
+In this study, we proposed a machine learning framework which integrated the neural network and transfer learning for microbial-based cross-regional diagnosis of diseases.
 
 <img src="https://github.com/HUST-NingKang-Lab/EXPERT-Disease-GGMP/blob/main/supplymentary_figure_S1.png" style="zoom:150%;" />
 
