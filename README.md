@@ -1,6 +1,9 @@
 # EXPERT-Disease-GGMP
 Application of transfer learning to exceed the regional limitations and exploit the potential of microbial-based cross-regional diagnosis of diseases. 
 
+
+<img src="https://github.com/HUST-NingKang-Lab/EXPERT-Disease-GGMP/blob/main/supplymentary_figure_S1.png" style="zoom:150%;" />
+
 ## Support
 
 For support using EXPERT, please [contact us](https://github.com/HUST-NingKang-Lab/EXPERT#maintainer). 
