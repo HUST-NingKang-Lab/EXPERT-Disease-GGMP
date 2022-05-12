@@ -10,7 +10,7 @@ To learn how to install the model and how to use it, click [here](https://github
 <img src="https://github.com/HUST-NingKang-Lab/EXPERT-Disease-GGMP/blob/main/transfer%20learning.png" style="zoom:150%;" />
 
 ``
-The transfer learning workflow of microbial-based cross-regional diagnosis of diseases: (1) Foundamental model establishment: ab initio train the disease neural network (DNN) model on the training set of city A. (2) Transfer model establishment: implement transfer learning to generate a transfer DNN for another city B by using the training set of city B. (3)Classification test: test the transfer DNN on the testing set of city B.
+The transfer learning workflow of microbial-based cross-regional diagnosis of diseases: (1) Fundamental model establishment: ab initio train the disease neural network (DNN) model on the training set of city A. (2) Transfer model establishment: implement transfer learning to generate a transfer DNN for another city B by using the training set of city B. (3)Classification test: test the transfer DNN on the testing set of city B.
 ``
 ## Example
 Here we choose Shenzhen(City A) and Guangzhou(City B) as the source city and target city, and we obtained genus-level species abundance tables for these two cities, 
