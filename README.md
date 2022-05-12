@@ -3,19 +3,20 @@ Recently, machine learning based on microbial features has drawn increasing inte
 
 In this study, we proposed a machine learning framework EXPERT-Disease which integrated the neural network and transfer learning for microbial-based cross-regional diagnosis of diseases.We selected Guangdong Gut Microbiome Project (GGMP, EBI ID: [PRJEB18535](https://www.ebi.ac.uk/ena/browser/view/PRJEB18535?show=reads)) samples and categorized them into 14 cities according to the sample sources. EXPERT-Disease trains from scratch to build a disease neural network model (DNN) based on the training set of each city, and then uesd training set from other cities for transfer learning to obtain the transferred neural network model (TDNN). Finally, the TDNN can be used for disease diagnosis in other cities.
 To get the the disease model of each city, please download [DNN model for each city](https://github.com/HUST-NingKang-Lab/EXPERT-Disease-GGMP/releases/tag/models).
-``
-We then implemented three assessments: 1) Independent assessment: ab initio train and test the disease neural network (DNN) model on the training set and the testing set of each city, respectively. 2) Regional assessment: ab initio train the DNN using the training set of one city A (source city) and testing on the testing set of another city B (target city). 3) Transfer assessment: ab initio train the DNN using training set of one city A, followed by transfer learning to generate a transfer DNN for another city B, and then test the transfer DNN on the testing set of the city B (figure B). 
-``
+
 ## Get and use
 To learn how to install the model and how to use it, click [here](https://github.com/HUST-NingKang-Lab/EXPERT)
 
 <img src="https://github.com/HUST-NingKang-Lab/EXPERT-Disease-GGMP/blob/main/transfer%20learning.png" style="zoom:150%;" />
 
+``
+The transfer learning workflow: (1) Foundamental model establishment: ab initio train the disease neural network (DNN) model on the training set of city A. (2) Transfer model establishment: implement transfer learning to generate a transfer DNN for another city B by using the training set of city B. (3)Classification test: test the transfer DNN on the testing set of city B. 
+``
 ## Example
 Here we choose Shenzhen(City A) and Guangzhou(City B) as the source city and target city, and we obtained genus-level species abundance tables for these two cities, 
 individuals with T2D are the positive samples and controls are the negitive samples.
 
-Genus-level species abundance tables([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): city1_train.tsv  city1_test.tsv  city2_train.tsv  city2_test.tsv
+Genus-level species abundance tables([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): city1_train.tsv  city1_test.tsv  city2_train.tsv  city2_test.tsv 
 Biome profiles([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): biome.tsv  
 Mapper profiles([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): city1_train_mapper.tsv  city1_test_mapper.tsv  city2_train_mapper.tsv  city2_test_mapper.tsv
 #### Ontology construct
