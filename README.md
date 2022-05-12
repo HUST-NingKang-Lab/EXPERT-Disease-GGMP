@@ -16,9 +16,9 @@ The transfer learning workflow: (1) Foundamental model establishment: ab initio 
 Here we choose Shenzhen(City A) and Guangzhou(City B) as the source city and target city, and we obtained genus-level species abundance tables for these two cities, 
 individuals with T2D are the positive samples and controls are the negitive samples.
 
-Genus-level species abundance tables([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): city1_train.tsv  city1_test.tsv  city2_train.tsv  city2_test.tsv 
-Biome profiles([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): biome.tsv  
-Mapper profiles([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): city1_train_mapper.tsv  city1_test_mapper.tsv  city2_train_mapper.tsv  city2_test_mapper.tsv
+Genus-level species abundance tables([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): city1_train.tsv  city1_test.tsv  city2_train.tsv  city2_test.tsv       
+Biome profiles([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): biome.tsv      
+Mapper profiles([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): city1_train_mapper.tsv  city1_test_mapper.tsv  city2_train_mapper.tsv city2_test_mapper.tsv      
 #### Ontology construct
 - Construct a biome ontology representing stages of T2D. You'll see constructed ontology like a tree in the printed message.
 ```
