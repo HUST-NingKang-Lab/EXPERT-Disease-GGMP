@@ -43,12 +43,12 @@ ls city2_test.tsv > inputlist; expert convert -i inputlist -o city2_testCM.h5 --
 #### Ab initio training
 - Train the disease neural network model from scratch. Here we will use ontology.pkl and hdf files.
 ```
-expert train -i city1_trainCM.h5 -l city1_train_labels.h5 -t ontology.pkl -o city_A_DNN
+expert train -i city1_trainCM.h5 -l city1_train_labels.h5 -t ontology.pkl -o city1_DNN
 ```
 #### Transfer learning
 - Transfer the knowledge of city B to the DNN model of city A for better performance in disease diagnosis on city B. You'll see running log and training process in the printed message.
 ```
-expert transfer -i city2_trainCM.h5 -l city2_train_labels.h5 -t ontology.pkl -m  city_A_DNN -o Transfer_DNN
+expert transfer -i city2_trainCM.h5 -l city2_train_labels.h5 -t ontology.pkl -m  city1_DNN -o Transfer_DNN
 ```
 #### Search
 - Search the test set of city B against the transferred DNN model.
