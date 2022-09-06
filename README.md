@@ -60,3 +60,16 @@ expert search -i city2_testCM.h5 -m Transfer_DNN -o Search_Transfer_DNN
 ```
 expert evaluate -i Search_Transfer_DNN -l city2_test_labels.h5 -o Evaluation
 ```
+## The illustration of the R code
+### city.R
+- Randomly selected samples of each city for each disease, into training subset(80%) and testing subset(20%). Generated the biome file, mapper file and the path file for each experiment.
+### city_gradient.R
+- The gradient experiments of the disease diagnosis across cities, the proportion of the training subset was 20%, 40% 60% and 80% respectively.
+### draw_figure_city_AUROC.R
+- The evaluation results of the three models of 14 cities respectvely and the collective results.
+### draw_figure_city_heatmap.R
+- The heatmap of the average AUROC of the three models of each city pair.
+### draw_figure_city_relavance.R
+- The boxplots and the lines showed the correlation between the sample size for transfer learning and the accuracy of the three models.
+### story.R
+- Using the "leave-one-out" method to discover the "region-spectific" microbes and the "region-shared" microbes.
