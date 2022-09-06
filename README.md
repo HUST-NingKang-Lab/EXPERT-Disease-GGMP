@@ -64,7 +64,7 @@ expert evaluate -i Search_Transfer_DNN -l city2_test_labels.h5 -o Evaluation
 ### city.R
 - Randomly selected samples of each city for each disease, into training subset(80%) and testing subset(20%). Generated the biome file, mapper file and the path file for each experiment.
 ### city_gradient.R
-- The gradient experiments of the disease diagnosis across cities, the proportion of the training subset was 20%, 40% 60% and 80% respectively.
+- The gradient experiments of the disease diagnosis across cities, the proportion of the training subset was 20%, 40%, 60% and 80% respectively.
 ### draw_figure_city_AUROC.R
 - The evaluation results of the three models of 14 cities respectvely and the collective results.
 ### draw_figure_city_heatmap.R
